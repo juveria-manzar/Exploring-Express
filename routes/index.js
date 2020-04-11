@@ -28,4 +28,25 @@ router.post('/register', function({ body }, res) {
     }
     res.json(submissionData)
 })
+
+router.get('/users', function(req, res) {
+    let msg = { msg: "Finding all users" }
+    let filters = []
+    let role = req.query.role || "";
+    let recentSubs = req.query.new || "";
+
+    role && (filters.push({ role: role }))
+    recentSubs && (filters.push({ recent_subscribers: true }))
+
+    if (filters.length) {
+        msg.filters = filters;
+        msg.msg = "Finding users with a filter"
+    }
+    res.json(msg)
+})
+
+router.get("/users/:userid", function(req, res) {
+    let id = req.params.userid;
+    res.json(`Getting user with id: ${id}`)
+})
 module.exports = router;
