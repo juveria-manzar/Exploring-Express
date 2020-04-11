@@ -6,12 +6,15 @@
         </h1>
 
         <p>
-            <%= body%>
+            <%= body %>
         </p>
-        <% if(locals.backend && backend.length>0){%>
+        <% if(locals.backend && backend.length > 0){%>
             <h2>Backend</h2>
             <ol type="I">
-                <%for(){%>
+                <%for(let i=0; i<backend.length; i++){%>
+                    <li>
+                        <%= backend[i] %>
+                    </li>
                     <%}%>
             </ol>
             <%}%>
