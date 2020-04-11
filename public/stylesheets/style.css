@@ -1,8 +1,37 @@
+button,
+input,
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font-family: "Baskervville", serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 64px; }
+
+body {
+  margin: 88px 88px 0;
+  color: #961e03;
+  font-size: 18px; }
+
+ul {
+  padding-left: 26px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid; }
+
+li {
+  display: inline-block;
+  padding-right: 62px; }
 
 a {
-  color: #00B7FF; }
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    opacity: .7; }
 
 /*# sourceMappingURL=style.css.map */
