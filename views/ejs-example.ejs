@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs'); %>
+
+    <div id="examples">
+        <h1>
+            <%= title %>
+        </h1>
+
+        <p>
+            <%= body%>
+        </p>
+        <% if(locals.backend && backend.length>0){%>
+            <h2>Backend</h2>
+            <ol type="I">
+                <%for(){%>
+                    <%}%>
+            </ol>
+            <%}%>
+    </div>
+    <%- include('partials/footer.ejs'); %>
