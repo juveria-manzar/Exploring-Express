@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>
-        <%= title %>
-    </title>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/tickets">Ticket</a></li>
-            <li><a href="/stats">Stats</a></li>
-        </ul>
-    </nav>
-
+<%- include('partials/header.ejs'); %>
     <h1>
         <%= title %>
     </h1>
@@ -32,6 +11,4 @@
         <a href="/users">See all users</a>
         <a href="/users/greug9g">See random user</a>
     </div>
-</body>
-
-</html>
+    <%- include('partials/footer.ejs'); %>
