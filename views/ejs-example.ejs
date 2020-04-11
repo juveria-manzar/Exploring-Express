@@ -18,5 +18,30 @@
                     <%}%>
             </ol>
             <%}%>
+                <% if(locals.frontend){%>
+                    <h2>Frontend</h2>
+                    <ol type="I">
+                        <li>
+                            <%= frontend.markup || "HTML" %>
+                        </li>
+                        <li>
+                            <%= frontend.style || "CSS" %>
+                        </li>
+                        <li>
+                            <%= frontend.scripts || "JS" %>
+                        </li>
+                        <li>
+                            Frameworks
+                            <ol>
+                                <li>
+                                    <%= frontend.frameworks.css || "No CSS framework"%>
+                                </li>
+                                <li>
+                                    <%= frontend.frameworks.spa || "No SPA framework"%>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <%}%>
     </div>
     <%- include('partials/footer.ejs'); %>
